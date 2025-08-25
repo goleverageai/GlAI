@@ -1,0 +1,303 @@
+/* 
+==============================================
+GoLeverage Website - Animations Stylesheet
+==============================================
+*/
+
+/* ===== Keyframes ===== */
+
+/* Neon Pulse Animation */
+@keyframes neonPulse {
+    0% {
+        text-shadow: 
+            0 0 5px rgba(0, 229, 255, 0.7),
+            0 0 10px rgba(0, 229, 255, 0.7),
+            0 0 20px rgba(0, 229, 255, 0.7),
+            0 0 40px rgba(0, 119, 255, 0.7);
+    }
+    50% {
+        text-shadow: 
+            0 0 10px rgba(0, 229, 255, 0.9),
+            0 0 20px rgba(0, 229, 255, 0.9),
+            0 0 30px rgba(0, 229, 255, 0.9),
+            0 0 50px rgba(0, 119, 255, 0.9);
+    }
+    100% {
+        text-shadow: 
+            0 0 5px rgba(0, 229, 255, 0.7),
+            0 0 10px rgba(0, 229, 255, 0.7),
+            0 0 20px rgba(0, 229, 255, 0.7),
+            0 0 40px rgba(0, 119, 255, 0.7);
+    }
+}
+
+/* Neon Border Animation */
+@keyframes neonBorder {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 229, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 229, 255, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 229, 255, 0.7);
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Left Animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Right Animation */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Float Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ===== Animation Classes ===== */
+
+/* Neon Text Animation */
+.neon-text {
+    animation: neonPulse 2s infinite;
+}
+
+/* Neon Border Animation */
+.neon-border {
+    animation: neonBorder 2s infinite;
+}
+
+/* Fade In Animation */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Fade In Left Animation */
+.fade-in-left {
+    animation: fadeInLeft 1s ease forwards;
+}
+
+/* Fade In Right Animation */
+.fade-in-right {
+    animation: fadeInRight 1s ease forwards;
+}
+
+/* Scale In Animation */
+.scale-in {
+    animation: scaleIn 0.5s ease forwards;
+}
+
+/* Rotate Animation */
+.rotate {
+    animation: rotate 10s linear infinite;
+}
+
+/* Float Animation */
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* ===== Element-Specific Animations ===== */
+
+/* Hero Content Animation */
+.hero-content {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Service Card Animation */
+.service-card:hover .service-icon {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Button Hover Animation */
+.btn:hover {
+    animation: neonBorder 2s infinite;
+}
+
+/* Quote Animation */
+.quote.active {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Benefit Icon Animation */
+.benefit-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Indicator Icon Animation */
+.indicator-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Metric Value Animation */
+.metric-value {
+    animation: neonPulse 2s infinite;
+}
+
+/* Step Number Animation */
+.step-number {
+    animation: neonPulse 2s infinite;
+}
+
+/* Product Card Animation */
+.product-card:hover .product-image {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* ===== Animation Delays ===== */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+/* ===== Animation Durations ===== */
+.duration-300 {
+    animation-duration: 0.3s;
+}
+
+.duration-500 {
+    animation-duration: 0.5s;
+}
+
+.duration-700 {
+    animation-duration: 0.7s;
+}
+
+.duration-1000 {
+    animation-duration: 1s;
+}
+
+.duration-1500 {
+    animation-duration: 1.5s;
+}
+
+/* ===== Scroll Animations ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-scale.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ===== Responsive Animations ===== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
