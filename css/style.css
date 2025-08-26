@@ -16,8 +16,8 @@ GoLeverage Website - Main Stylesheet
     --color-off-white: #f5f5f5;
     
     /* Neon Colors */
-    --color-neon-primary: #b2009b;
-    --color-neon-primary-glow: rgba(255, 0, 230, 0.7);
+    --color-neon-primary: #00e5ff;
+    --color-neon-primary-glow: rgba(0, 229, 255, 0.7);
     --color-neon-secondary: #0077ff;
     --color-neon-secondary-glow: rgba(0, 119, 255, 0.7);
     --color-neon-accent: #ff003c;
